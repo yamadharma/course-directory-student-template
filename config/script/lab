@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for i in $@
+do
+    mkdir -p lab/"${i}"
+    cp -R template/report lab/"${i}"
+done
