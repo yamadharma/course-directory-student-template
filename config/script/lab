@@ -2,6 +2,7 @@
 
 for i in $@
 do
-    mkdir -p lab/"${i}"
-    cp -R template/report lab/"${i}"
+    mkdir -p labs/lab"${i}"
+    cp -R template/report/report labs/lab"${i}"
+    cp -R template/presentation/presentation labs/lab"${i}"
 done

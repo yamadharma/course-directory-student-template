@@ -1,4 +1,4 @@
-# Шаблон каталога курса для студентов
+# Course Catalog Template for Students
 
 ## Скачать репозиторий
 

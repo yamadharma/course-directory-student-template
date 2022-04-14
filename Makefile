@@ -5,14 +5,14 @@ COURSE =
 ifndef COURSE
 $(error "Usage: make COURSE=<course_name>")
 else
-include template/course/$(COURSE)
+include config/course/$(COURSE)
 endif
 
 all: structure
 
 structure:	## Generate directories structure
-	@[ -z "$(LAB_NUM)" ] || config/script/lab {$(LAB_NUM)}
-	@[ -z "$(PROJECT_PERSONAL)" ] || mkdir project_personal
-	@[ -z "$(PROJECT_GROUP)" ] || mkdir project_group
+	@[ -z "$(LABS)" ] || config/script/lab {$(LABS)}
+	@[ -z "$(PROJECT_PERSONAL)" ] || config/script/project-personal {$(PROJECT_PERSONAL)}
+	@[ -z "$(PROJECT_GROUP)" ] || config/script/project-group {$(PROJECT_GROUP)}
 	@touch structure
 

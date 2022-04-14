@@ -1,3 +1,6 @@
-[submodule "kermit-makefiles"]
-	path = kermit-makefiles
-	url = https://github.com/yamadharma/kermit-makefiles.git
+[submodule "template/report"]
+	path = template/report
+	url = https://github.com/yamadharma/academic-laboratory-report-template.git
+[submodule "template/presentation"]
+	path = template/presentation
+	url = https://github.com/yamadharma/academic-presentation-markdown-template.git

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for i in $@
+do
+    mkdir -p project-group/stage"${i}"
+    cp -R template/report/report project-group/stage"${i}"
+    cp -R template/presentation/presentation project-group/stage"${i}"
+done
