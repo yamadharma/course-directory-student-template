@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Find maximum length for formating output
+len=1
+for i in config/course/*
+do
+    course_name=$(basename "${i}")
+    len_new=${#course_name}
+    if [[ ${len_new} -gt ${len} ]]
+    then
+	len=${len_new}
+    fi
+done
+
+for i in config/course/*
+do
+    course_name=$(basename "${i}")
+    printf "%*s %s\n" ${len} "${course_name}" "$(cat ${i} | grep DESCR | cut -d: -f2)"
+done

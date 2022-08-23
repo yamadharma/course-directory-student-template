@@ -2,13 +2,16 @@ COURSE =
 
 .PHONY: all clean
 
-ifndef COURSE
-$(error "Usage: make COURSE=<course_name>")
-else
-include config/course/$(COURSE)
-endif
+#ifndef COURSE
+#$(error "Usage: make COURSE=<course_name>")
+#else
+#include config/course/$(COURSE)
+#endif
 
 all: structure
+
+list:	## List of courses
+	config/script/list | sort -k2
 
 structure:	## Generate directories structure
 	@[ -z "$(LABS)" ] || config/script/lab {$(LABS)}
