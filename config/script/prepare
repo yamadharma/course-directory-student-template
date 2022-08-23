@@ -1,0 +1,23 @@
+#!/bin/bash
+
+source ./config/script/functions
+
+COURSE=$(check-course)
+
+if [[ -z "${COURSE}" ]]
+then 	
+    echo "Please use the correct course abbreviation"
+    list-courses | sort -k 2
+    exit 1
+fi
+
+set -a
+source ./config/course/"${COURSE}"
+
+[[ -z "${LABS}" ]] || lab ${LABS}
+[[ -z "${PROJECT_PERSONAL}" ]] || project-personal ${PROJECT_PERSONAL}
+[[ -z "${PROJECT_GROUP}" ]] || project-group ${PROJECT_GROUP}
+
+
+
+

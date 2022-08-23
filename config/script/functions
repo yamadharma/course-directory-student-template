@@ -1,0 +1,81 @@
+#!/bin/bash
+
+## Check for course files
+function check-course () {
+
+    if [[ -f COURSE ]]
+    then
+	course_name_local=$(cat COURSE)
+	if [[ -n ${course_name_local} ]]
+	then	
+	    course_name=${course_name_local}
+	else
+	    course_name_local="$(pwd)"
+	    course_name=`basename "${course_name_local}"`
+	fi  
+    fi
+    
+    if [[ $(find ./config/course -type f -print | grep -c "${course_name}") != "0" ]]
+    then
+	echo "${course_name}"
+	exit 0
+    else
+	echo ""
+	exit 1
+    fi
+}
+
+## Generate Lab directory from templates
+function lab () {
+    local number=$1
+    for i in $(seq -w 1 ${number})
+    do
+	mkdir -p labs/lab"${i}"
+	cp -R template/report/report labs/lab"${i}"
+	cp -R template/presentation/presentation labs/lab"${i}"
+    done
+}
+
+## Generate Group Project directory from templates
+function project-group () {
+        local number=$1
+	for i in $(seq -w 1 ${number})
+	do
+	    mkdir -p project-group/stage"${i}"
+	    cp -R template/report/report project-group/stage"${i}"
+	    cp -R template/presentation/presentation project-group/stage"${i}"
+	done
+}	
+
+## Generate Personal Project directory from templates
+function project-personal () {
+        local number=$1
+	for i in $(seq -w 1 ${number})
+	do
+	    mkdir -p project-personal/stage"${i}"
+	    cp -R template/report/report project-personal/stage"${i}"
+	    cp -R template/presentation/presentation project-personal/stage"${i}"
+	done
+}
+
+## Generate list of courses
+## Output: course-name course-description
+function list-courses () {
+    ## Find maximum length for formating output
+    len=1
+    for i in config/course/*
+    do
+	course_name=$(basename "${i}")
+	len_new=${#course_name}
+	if [[ ${len_new} -gt ${len} ]]
+	then
+	    len=${len_new}
+	fi
+    done
+    
+    for i in config/course/*
+    do
+	course_name=$(basename "${i}")
+	printf "%*s %s\n" ${len} "${course_name}" "$(cat ${i} | grep DESCR | cut -d: -f2)"
+    done
+}
