@@ -6,8 +6,8 @@ COURSE=$(check-course)
 
 if [[ -z "${COURSE}" ]]
 then 	
-    echo "Please use right course abbreviation"
-    list-courses
+    echo "Please use the correct course abbreviation"
+    list-courses | sort -k 2
     exit 1
 fi
 
