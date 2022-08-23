@@ -1,6 +1,8 @@
 #!/bin/bash
+## Generate list of courses
+## Output: course-name course-description
 
-# Find maximum length for formating output
+## Find maximum length for formating output
 len=1
 for i in config/course/*
 do
