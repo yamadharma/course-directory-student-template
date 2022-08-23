@@ -8,7 +8,7 @@ COURSE =
 #include config/course/$(COURSE)
 #endif
 
-all: help
+all: prepare
 
 help:
 	@echo 'Usage:'
@@ -21,10 +21,8 @@ help:
 	@echo
 
 list:	## List of courses
-	@config/script/list | sort -k2
+	@./config/script/list-courses
 
-structure:	## Generate directories structure
-	@[ -z "$(LABS)" ] || config/script/lab {$(LABS)}
-	@[ -z "$(PROJECT_PERSONAL)" ] || config/script/project-personal {$(PROJECT_PERSONAL)}
-	@[ -z "$(PROJECT_GROUP)" ] || config/script/project-group {$(PROJECT_GROUP)}
-	@touch structure
+prepare:	## Generate directories structure
+	@./config/script/prepare
+	@touch prepare

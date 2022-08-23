@@ -1,5 +1,5 @@
 #DESCR: Введение в научное программирование
-LABS = 01..08
-PROJECT_PERSONAL = 1..6
-PROJECT_GROUP = 1..4
+LABS=8
+PROJECT_PERSONAL=6
+PROJECT_GROUP=4
 
