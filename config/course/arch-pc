@@ -1,4 +1,4 @@
 #DESCR: Архитектура ЭВМ
-LABS = 01..15
+LABS = 01..12
 PROJECT_PERSONAL =
 PROJECT_GROUP =
