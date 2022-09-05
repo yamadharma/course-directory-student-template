@@ -1,8 +1,0 @@
-#!/bin/bash
-
-for i in $@
-do
-    mkdir -p labs/lab"${i}"
-    cp -R template/report/report labs/lab"${i}"
-    cp -R template/presentation/presentation labs/lab"${i}"
-done

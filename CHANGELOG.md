@@ -1,0 +1,23 @@
+# 1.0.0 (2022-09-05)
+
+
+### Bug Fixes
+
+* **course:** fix number of labs in arch-pc ([edd3793](https://github.com/yamadharma/course-directory-student-template/commit/edd379372c071c796cf84c38cdd7fe996afd0cdb))
+* **doc:** fix typo in documentation ([1220bc4](https://github.com/yamadharma/course-directory-student-template/commit/1220bc4a802e558e2a18036b43e39ca131ee644c))
+* **doc:** move documentation to README.md ([5875d4b](https://github.com/yamadharma/course-directory-student-template/commit/5875d4bc52646e868974ec518a96fe18c0235b40))
+* **script:** remove unneeded scripts ([2371297](https://github.com/yamadharma/course-directory-student-template/commit/23712978562979560713861201f50c82e447e042))
+
+
+### Features
+
+* **course:** add arch-pc course ([d870fa4](https://github.com/yamadharma/course-directory-student-template/commit/d870fa48c7955d3a068e14bb096c5530c9c48ee1))
+* **course:** add new course ([c63d6b1](https://github.com/yamadharma/course-directory-student-template/commit/c63d6b162ed4df91d96bd9a9ea5ee014bdd42f73))
+* **doc:** add documentation ([6e6fa80](https://github.com/yamadharma/course-directory-student-template/commit/6e6fa80ecf9a7a2fa1dbd3e45cdf28dc07a1a1f8))
+* **make:** add help to Makefile ([8015255](https://github.com/yamadharma/course-directory-student-template/commit/8015255d434b2a4735f0ea406ef99be4d68f8b6f))
+* **make:** add list of courses ([395c5da](https://github.com/yamadharma/course-directory-student-template/commit/395c5da4de44d792ee5ceb45f255004a0e0f7e30))
+* **script:** add script for auto-determine name of course ([10a8b58](https://github.com/yamadharma/course-directory-student-template/commit/10a8b58ccf830930dc6daf15d664582ce87913e3))
+
+
+
+
