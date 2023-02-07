@@ -1,3 +1,12 @@
+## [1.0.4](https://github.com/yamadharma/course-directory-student-template/compare/v1.0.3...v1.0.4) (2023-02-07)
+
+
+### Features
+
+* **course:** add presentation element ([afe4900](https://github.com/yamadharma/course-directory-student-template/commit/afe49009b2f1ca47385f3020048617a0570ed196))
+
+
+
 ## [1.0.3](https://github.com/yamadharma/course-directory-student-template/compare/v1.0.2...v1.0.3) (2023-02-07)
 
 
