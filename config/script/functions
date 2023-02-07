@@ -7,14 +7,14 @@ function check-course () {
     then
 	course_name_local=$(cat COURSE)
 	if [[ -n ${course_name_local} ]]
-	then	
+	then
 	    course_name=${course_name_local}
 	else
 	    course_name_local="$(pwd)"
 	    course_name=`basename "${course_name_local}"`
-	fi  
+	fi
     fi
-    
+
     if [[ $(find ./config/course -type f -print | grep -c "${course_name}") != "0" ]]
     then
 	echo "${course_name}"
@@ -34,28 +34,55 @@ function lab () {
 	cp -R template/report/report labs/lab"${i}"
 	cp -R template/presentation/presentation labs/lab"${i}"
     done
+    echo "# Laboratory works" > labs/README.md
+    echo "# Лабораторные работы" > labs/README.ru.md
 }
 
 ## Generate Group Project directory from templates
 function project-group () {
-        local number=$1
-	for i in $(seq -w 1 ${number})
-	do
-	    mkdir -p project-group/stage"${i}"
-	    cp -R template/report/report project-group/stage"${i}"
-	    cp -R template/presentation/presentation project-group/stage"${i}"
-	done
-}	
+    local number=$1
+    for i in $(seq -w 1 ${number})
+    do
+	mkdir -p project-group/stage"${i}"
+	cp -R template/report/report project-group/stage"${i}"
+	cp -R template/presentation/presentation project-group/stage"${i}"
+    done
+    echo "# Team project" > project-group/README.md
+    echo "# Групповой проект" > project-group/README.ru.md
+}
 
 ## Generate Personal Project directory from templates
 function project-personal () {
-        local number=$1
+    local number=$1
+    for i in $(seq -w 1 ${number})
+    do
+	mkdir -p project-personal/stage"${i}"
+	cp -R template/report/report project-personal/stage"${i}"
+	cp -R template/presentation/presentation project-personal/stage"${i}"
+    done
+    echo "# Individual project" > project-personal/README.md
+    echo "# Индивидуальный проект" > project-personal/README.ru.md
+}
+
+## Generate Presentation directory from templates
+function presentation () {
+    local number=$1
+
+    if [[ $number == 1 ]]
+    then
+	mkdir -p presentation
+	cp -R template/report/report presentation
+	cp -R template/presentation/presentation presentation
+    else
 	for i in $(seq -w 1 ${number})
 	do
-	    mkdir -p project-personal/stage"${i}"
-	    cp -R template/report/report project-personal/stage"${i}"
-	    cp -R template/presentation/presentation project-personal/stage"${i}"
+	    mkdir -p presentation/stage"${i}"
+	    cp -R template/report/report presentation/stage"${i}"
+	    cp -R template/presentation/presentation presentation/stage"${i}"
 	done
+    fi
+    echo "# Individual presentation" > presentation/README.md
+    echo "# Индивидуальное выступление" > presentation/README.ru.md
 }
 
 ## Generate list of courses
@@ -72,7 +99,7 @@ function list-courses () {
 	    len=${len_new}
 	fi
     done
-    
+
     for i in config/course/*
     do
 	course_name=$(basename "${i}")

@@ -17,6 +17,7 @@ source ./config/course/"${COURSE}"
 [[ -z "${LABS}" ]] || lab ${LABS}
 [[ -z "${PROJECT_PERSONAL}" ]] || project-personal ${PROJECT_PERSONAL}
 [[ -z "${PROJECT_GROUP}" ]] || project-group ${PROJECT_GROUP}
+[[ -z "${PRESENTATION}" ]] || presentation ${PRESENTATION}
 
 
 
