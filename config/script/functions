@@ -2,7 +2,7 @@
 
 ## Check for course files
 function check-course () {
-
+    
     if [[ -f COURSE ]]
     then
 	course_name_local=$(cat COURSE)
@@ -83,6 +83,13 @@ function presentation () {
     fi
     echo "# Individual presentation" > presentation/README.md
     echo "# Индивидуальное выступление" > presentation/README.ru.md
+}
+
+## Generate Code directory from templates
+function get-code () {
+    git submodule add "$1" template/code
+    mkdir -p labs
+    cp -R template/code/lab* labs
 }
 
 ## Generate list of courses
