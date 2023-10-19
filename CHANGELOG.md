@@ -1,3 +1,12 @@
+## [1.0.5](https://github.com/yamadharma/course-directory-student-template/compare/v1.0.4...v1.0.5) (2023-10-19)
+
+
+### Features
+
+* **courses:** add net-os-admin course ([c292336](https://github.com/yamadharma/course-directory-student-template/commit/c2923367800c66d900b4757b13b6b5864a5ef02c))
+
+
+
 ## [1.0.4](https://github.com/yamadharma/course-directory-student-template/compare/v1.0.3...v1.0.4) (2023-02-07)
 
 
