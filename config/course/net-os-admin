@@ -1,0 +1,6 @@
+#DESCR: Администрирование сетевых подсистем
+LABS=16
+PROJECT_PERSONAL=
+PROJECT_GROUP=
+PRESENTATION=1
+CODE="https://github.com/yamadharma/net-os-admin-lab-code.git"
