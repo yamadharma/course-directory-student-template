@@ -1,3 +1,13 @@
+## [1.0.6](https://github.com/yamadharma/course-directory-student-template/compare/v1.0.5...v1.0.6) (2023-11-05)
+
+
+### Features
+
+* **course:** add computer-practice ([3d13f5b](https://github.com/yamadharma/course-directory-student-template/commit/3d13f5bfa087e045119f95a23ecd9faf514a5899))
+* **course:** add simulation-networks ([566fead](https://github.com/yamadharma/course-directory-student-template/commit/566fead32834b14cce143f0346aed7800a09a8b6))
+
+
+
 ## [1.0.5](https://github.com/yamadharma/course-directory-student-template/compare/v1.0.4...v1.0.5) (2023-10-19)
 
 
