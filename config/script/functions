@@ -64,6 +64,19 @@ function project-personal () {
     echo "# Индивидуальный проект" > project-personal/README.ru.md
 }
 
+## Generate External Course directory from templates
+function external-course () {
+    local number=$1
+    for i in $(seq -w 1 ${number})
+    do
+	mkdir -p external-course/stage"${i}"
+	cp -R template/report/report external-course/stage"${i}"
+	cp -R template/presentation/presentation external-course/stage"${i}"
+    done
+    echo "# External Course" > external-course/README.md
+    echo "# Внешний курс" > external-course/README.ru.md
+}
+
 ## Generate Presentation directory from templates
 function presentation () {
     local number=$1

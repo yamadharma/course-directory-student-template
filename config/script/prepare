@@ -19,6 +19,8 @@ source ./config/course/"${COURSE}"
 [[ -z "${PROJECT_GROUP}" ]] || project-group ${PROJECT_GROUP}
 [[ -z "${PRESENTATION}" ]] || presentation ${PRESENTATION}
 [[ -z "${CODE}" ]] || get-code ${CODE}
+[[ -z "${EXTERNAL_COURSE}" ]] || project-personal ${EXTERNAL_COURSE}
+
 
 
 
