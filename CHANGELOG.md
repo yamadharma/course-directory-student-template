@@ -1,3 +1,18 @@
+## [1.0.7](https://github.com/yamadharma/course-directory-student-template/compare/v1.0.6...v1.0.7) (2024-02-08)
+
+
+### Bug Fixes
+
+* **make:** update defaults ([9178e8d](https://github.com/yamadharma/course-directory-student-template/commit/9178e8d5b96cf29c8eabab7b9589a85e678e21e9))
+
+
+### Features
+
+* **course:** add external course to os-intro ([2646034](https://github.com/yamadharma/course-directory-student-template/commit/26460342f87ee4af7597e1739c380bb7efa09a56))
+* **courses:** add net-admin ([cfcb6b4](https://github.com/yamadharma/course-directory-student-template/commit/cfcb6b400218d9cb1e613057782ee41cd38a5e14))
+
+
+
 ## [1.0.6](https://github.com/yamadharma/course-directory-student-template/compare/v1.0.5...v1.0.6) (2023-11-05)
 
 
