@@ -2,13 +2,7 @@ COURSE =
 
 .PHONY: all clean
 
-#ifndef COURSE
-#$(error "Usage: make COURSE=<course_name>")
-#else
-#include config/course/$(COURSE)
-#endif
-
-all: prepare
+all: help
 
 help:
 	@echo 'Usage:'
