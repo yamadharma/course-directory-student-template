@@ -1,3 +1,12 @@
+## [1.0.8](https://github.com/yamadharma/course-directory-student-template/compare/v1.0.7...v1.0.8) (2024-02-13)
+
+
+### Features
+
+* **course:** add activities to infosec ([41ad83c](https://github.com/yamadharma/course-directory-student-template/commit/41ad83c4e2e698ae03ddbb134dffbb67c5e8627e))
+
+
+
 ## [1.0.7](https://github.com/yamadharma/course-directory-student-template/compare/v1.0.6...v1.0.7) (2024-02-08)
 
 
