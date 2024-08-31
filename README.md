@@ -21,11 +21,11 @@ git clone --recursive https://github.com/yamadharma/course-directory-student-tem
             └── <код предмета>/
     ```
 
--   Например, для 2023--2024 учебного года и предмета «Операционные системы» (код предмета `os-intro`) структура каталогов примет следующий вид:
+-   Например, для 2024--2025 учебного года и предмета «Операционные системы» (код предмета `os-intro`) структура каталогов примет следующий вид:
 
     ``` bash
     ~/work/study/
-    └── 2023-2024/
+    └── 2024-2025/
         └── Операционные системы/
             └── os-intro/
     ```
@@ -36,10 +36,10 @@ git clone --recursive https://github.com/yamadharma/course-directory-student-tem
     study_<учебный год>_<код предмета>
     ```
 
--   Например, для 2023--2024 учебного года и предмета «Операционные системы» (код предмета `os-intro`) название проекта примет следующий вид:
+-   Например, для 2024--2025 учебного года и предмета «Операционные системы» (код предмета `os-intro`) название проекта примет следующий вид:
 
     ``` example
-    study_2023-2024_os-intro
+    study_2024-2025_os-intro
     ```
 
 -   Каталог для лабораторных работ имеет вид `labs`.
@@ -69,13 +69,13 @@ git clone --recursive https://github.com/yamadharma/course-directory-student-tem
     gh repo create <new-repo-name> --template="<owner/template-repo>"
     ```
 
--   Например, для 2023--2024 учебного года и предмета «Операционные системы» (код предмета `os-intro`) создание репозитория примет следующий вид:
+-   Например, для 2024--2025 учебного года и предмета «Операционные системы» (код предмета `os-intro`) создание репозитория примет следующий вид:
 
     ``` shell
-    mkdir -p ~/work/study/2023-2024/"Операционные системы"
-    cd ~/work/study/2023-2024/"Операционные системы"
-    gh repo create study_2023-2024_os-intro --template=yamadharma/course-directory-student-template --public
-    git clone --recursive git@github.com:<owner>/study_2023-2024_os-intro.git os-intro
+    mkdir -p ~/work/study/2024-2025/"Операционные системы"
+    cd ~/work/study/2024-2025/"Операционные системы"
+    gh repo create study_2024-2025_os-intro --template=yamadharma/course-directory-student-template --public
+    git clone --recursive git@github.com:<owner>/study_2024-2025_os-intro.git os-intro
     ```
 
 -   Сделать свой репозиторий на основе шаблона можно и вручную.
@@ -85,7 +85,7 @@ git clone --recursive https://github.com/yamadharma/course-directory-student-tem
 -   Перейдите в каталог курса:
 
     ``` shell
-    cd ~/work/study/2023-2024/"Операционные системы"/os-intro
+    cd ~/work/study/2024-2025/"Операционные системы"/os-intro
     ```
 
 -   Удалите лишние файлы:
