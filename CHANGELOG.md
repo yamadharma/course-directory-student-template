@@ -1,3 +1,13 @@
+## [1.0.10](https://github.com/yamadharma/course-directory-student-template/compare/v1.0.9...v1.0.10) (2025-02-10)
+
+
+### Features
+
+* **course:** add new courses ([f73112d](https://github.com/yamadharma/course-directory-student-template/commit/f73112d50d388f6717abbb69e33f414a3aa78cc0))
+* **course:** add new courses ([4857e17](https://github.com/yamadharma/course-directory-student-template/commit/4857e17683bcc0add21ed0bf0d8680f713b93979))
+
+
+
 ## [1.0.9](https://github.com/yamadharma/course-directory-student-template/compare/v1.0.8...v1.0.9) (2024-08-31)
 
 
