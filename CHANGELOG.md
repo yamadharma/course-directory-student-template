@@ -1,3 +1,12 @@
+# [1.1.0](https://github.com/yamadharma/course-directory-student-template/compare/v1.0.10...v1.1.0) (2025-05-14)
+
+
+### Bug Fixes
+
+* **main:** update templates ([8fce5ea](https://github.com/yamadharma/course-directory-student-template/commit/8fce5ea6551b7f58d7d75afc48a9fda10d401fd8))
+
+
+
 ## [1.0.10](https://github.com/yamadharma/course-directory-student-template/compare/v1.0.9...v1.0.10) (2025-02-10)
 
 
