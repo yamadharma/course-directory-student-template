@@ -353,3 +353,14 @@ dmypy.json
 
 # pytype static type analyzer
 .pytype/
+
+## net-os-admin
+*.iso
+*.box
+*.vdi
+plugins
+.vagrant/
+.vagrant.d/
+.vbox/
+.config/
+vm/
