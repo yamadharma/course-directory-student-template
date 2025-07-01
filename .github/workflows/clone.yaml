@@ -1,9 +1,6 @@
 name: Replace data in package.json
 on:
-  workflow_dispatch:
-  # push:
-  #   branches:
-  #     - master
+  repository_dispatch:
 
 permissions:
   contents: write
