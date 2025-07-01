@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./config/script/functions
+source ./template/config/script/functions
 
 COURSE=$(check-course)
 
@@ -12,7 +12,7 @@ then
 fi
 
 set -a
-source ./config/course/"${COURSE}"
+source ./template/config/course/"${COURSE}"
 
 [[ -z "${LABS}" ]] || lab ${LABS}
 [[ -z "${PROJECT_PERSONAL}" ]] || project-personal ${PROJECT_PERSONAL}
