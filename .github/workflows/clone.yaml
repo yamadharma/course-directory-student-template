@@ -1,6 +1,5 @@
 name: Replace data in package.json
-on:
-  fork:
+on: push
 
 permissions:
   contents: write
@@ -11,7 +10,7 @@ jobs:
 
     # We will only run this action when this repository isn't the template repository
     if: >-
-      ${{ !github.event.repository.is_template }}
+      ${{ !github.event.repository.is_template && github.run_number == 1 }}
 
     runs-on: ubuntu-latest
     steps:
