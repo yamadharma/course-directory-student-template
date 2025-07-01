@@ -1,3 +1,12 @@
+# [1.2.0](https://github.com/yamadharma/course-directory-student-template/compare/v1.1.0...v1.2.0) (2025-07-01)
+
+
+### Features
+
+* **gitignore:** add ignore files for net-os-admin ([ac4ff0c](https://github.com/yamadharma/course-directory-student-template/commit/ac4ff0c2afeb23dbd51b2b33f39a4a467da5f7fb))
+
+
+
 # [1.1.0](https://github.com/yamadharma/course-directory-student-template/compare/v1.0.10...v1.1.0) (2025-05-14)
 
 
