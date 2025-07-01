@@ -28,10 +28,10 @@ jobs:
           sed -i "s/\"version\": \".*\"/\"version\": \"1.0.0\"/" package.json
       - name: Replace name and email
         run: |
-          sed -i "s/\"author\": \".*\"/\"author\": \"${{ github.event.client_payload.sender }}\"/" package.json
+          sed -i "s/\"author\": \".*\"/\"author\": \"${{ github.actor }}\"/" package.json
       - name: Replace repository
         run: |
-          sed -i "s/\"repository\": \".*\"/\"repository\": \"${{ github.event.client_payload.repository }}\"/" package.json
+          sed -i "s/\"repository\": \".*\"/\"repository\": \"${{ github.repositoryUrl }}\"/" package.json
 
       - name: Commit changes
         run: |
