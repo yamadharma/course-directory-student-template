@@ -2,7 +2,7 @@
 ## Generate list of courses
 ## Output: course-name course-description
 
-source ./config/script/functions
+source ./template/config/script/functions
 
 list-courses | sort -k 2
 

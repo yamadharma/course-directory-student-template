@@ -15,7 +15,7 @@ function check-course () {
 	fi
     fi
 
-    if [[ $(find ./config/course -type f -print | grep -c "${course_name}") != "0" ]]
+    if [[ $(find ./template/config/course -type f -print | grep -c "${course_name}") != "0" ]]
     then
 	echo "${course_name}"
 	exit 0
@@ -114,7 +114,7 @@ function get-code () {
 function list-courses () {
     ## Find maximum length for formating output
     len=1
-    for i in config/course/*
+    for i in template/config/course/*
     do
 	course_name=$(basename "${i}")
 	len_new=${#course_name}
@@ -124,7 +124,7 @@ function list-courses () {
 	fi
     done
 
-    for i in config/course/*
+    for i in template/config/course/*
     do
 	course_name=$(basename "${i}")
 	printf "%*s %s\n" ${len} "${course_name}" "$(cat ${i} | grep DESCR | cut -d: -f2)"
