@@ -1,6 +1,6 @@
 name: Replace data in package.json
 on:
-  fork:
+  repository_dispatch:
 jobs:
   replace-data:
     runs-on: ubuntu-latest
