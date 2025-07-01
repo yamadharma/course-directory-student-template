@@ -31,7 +31,7 @@ jobs:
           sed -i "s/\"author\": \".*\"/\"author\": \"${{ github.actor }}\"/" package.json
       - name: Replace repository
         run: |
-          sed -i "s/\"repository\": \".*\"/\"repository\": \"${{ github.repositoryUrl }}\"/" package.json
+          sed -i "s|\"repository\": \".*\"|\"repository\": \"${{ github.repositoryUrl }}\"|" package.json
 
       - name: Commit changes
         run: |
