@@ -4,5 +4,5 @@
 
 source ./template/config/script/functions
 
-list-courses | sort -k 2
+list_courses | sort -k 2
 
