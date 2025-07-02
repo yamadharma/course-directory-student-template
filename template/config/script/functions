@@ -142,5 +142,5 @@ function edit_package_json () {
     # Replace description
     sed -i "s|\"description\": \".*\"|\"description\": \"$(cat template/config/course/`cat COURSE` | grep DESCR | cut -d: -f2 | xargs)\"|" package.json
     # Replace name
-    sed -i "s|\"name\": \".*\"|\"name\": \"$(basename `pwd`)\"|" package.json
+    sed -i "s|\"name\": \".*\"|\"name\": \"$(cat COURSE)\"|" package.json
 }
