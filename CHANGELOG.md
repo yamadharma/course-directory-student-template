@@ -1,3 +1,18 @@
+## [1.2.1](https://github.com/yamadharma/course-directory-student-template/compare/v1.2.0...v1.2.1) (2025-07-02)
+
+
+### Bug Fixes
+
+* **scripts:** fix function names (- -> _) ([8c71784](https://github.com/yamadharma/course-directory-student-template/commit/8c71784d8d7efb6185fe8923270a3a5115434876))
+* **workflow:** fix workflow ([e7364fd](https://github.com/yamadharma/course-directory-student-template/commit/e7364fd50d975d388252e744afc00fc6eaa43dcd))
+
+
+### Features
+
+* **main:** add github workflow ([d3712e0](https://github.com/yamadharma/course-directory-student-template/commit/d3712e0f051f2b15257a9c45061f9a82952eb87e))
+
+
+
 # [1.2.0](https://github.com/yamadharma/course-directory-student-template/compare/v1.1.0...v1.2.0) (2025-07-01)
 
 
