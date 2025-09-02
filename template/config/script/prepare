@@ -21,5 +21,7 @@ source ./template/config/course/"${COURSE}"
 [[ -z "${CODE}" ]] || get_code ${CODE}
 [[ -z "${EXTERNAL_COURSE}" ]] || project_personal ${EXTERNAL_COURSE}
 
+rm CHANGELOG.md
+
 ## Edit package.json
 edit_package_json

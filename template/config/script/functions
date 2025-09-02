@@ -28,11 +28,13 @@ function check_course () {
 ## Generate Lab directory from templates
 function lab () {
     local number=$1
+    COURSE=$(check_course)
     for i in $(seq -w 1 ${number})
     do
 	mkdir -p labs/lab"${i}"
 	cp -R template/report/report labs/lab"${i}"
 	cp -R template/presentation/presentation labs/lab"${i}"
+	find labs/lab"${i}" -iname "*.qmd" -exec bash -c 'mv "$0" "$(dirname "$0")/${COURSE}=lab"${i}"--$(basename "$0")"' "{}" \;
     done
     echo "# Laboratory works" > labs/README.md
     echo "# Лабораторные работы" > labs/README.ru.md
@@ -41,11 +43,13 @@ function lab () {
 ## Generate Group Project directory from templates
 function project_group () {
     local number=$1
+    COURSE=$(check_course)
     for i in $(seq -w 1 ${number})
     do
 	mkdir -p project-group/stage"${i}"
 	cp -R template/report/report project-group/stage"${i}"
 	cp -R template/presentation/presentation project-group/stage"${i}"
+	find project-group/stage"${i}" -iname "*.qmd" -exec bash -c 'mv "$0" "$(dirname "$0")/${COURSE}=project-group=stage"${i}"--$(basename "$0")"' "{}" \;
     done
     echo "# Team project" > project-group/README.md
     echo "# Групповой проект" > project-group/README.ru.md
@@ -54,11 +58,13 @@ function project_group () {
 ## Generate Personal Project directory from templates
 function project_personal () {
     local number=$1
+    COURSE=$(check_course)
     for i in $(seq -w 1 ${number})
     do
 	mkdir -p project-personal/stage"${i}"
 	cp -R template/report/report project-personal/stage"${i}"
 	cp -R template/presentation/presentation project-personal/stage"${i}"
+	find project-personal/stage"${i}" -iname "*.qmd" -exec bash -c 'mv "$0" "$(dirname "$0")/${COURSE}=project-personal=stage"${i}"--$(basename "$0")"' "{}" \;
     done
     echo "# Individual project" > project-personal/README.md
     echo "# Индивидуальный проект" > project-personal/README.ru.md
@@ -67,11 +73,13 @@ function project_personal () {
 ## Generate External Course directory from templates
 function external_course () {
     local number=$1
+    COURSE=$(check_course)
     for i in $(seq -w 1 ${number})
     do
 	mkdir -p external-course/stage"${i}"
 	cp -R template/report/report external-course/stage"${i}"
 	cp -R template/presentation/presentation external-course/stage"${i}"
+	find external-course/stage"${i}" -iname "*.qmd" -exec bash -c 'mv "$0" "$(dirname "$0")/${COURSE}=external-course=stage"${i}"--$(basename "$0")"' "{}" \;
     done
     echo "# External Course" > external-course/README.md
     echo "# Внешний курс" > external-course/README.ru.md
@@ -80,18 +88,20 @@ function external_course () {
 ## Generate Presentation directory from templates
 function presentation () {
     local number=$1
-
+    COURSE=$(check_course)
     if [[ $number == 1 ]]
     then
 	mkdir -p presentation
 	cp -R template/report/report presentation
 	cp -R template/presentation/presentation presentation
+	find presentation -iname "*.qmd" -exec bash -c 'mv "$0" "$(dirname "$0")/${COURSE}=presentation--$(basename "$0")"' "{}" \;
     else
 	for i in $(seq -w 1 ${number})
 	do
 	    mkdir -p presentation/stage"${i}"
 	    cp -R template/report/report presentation/stage"${i}"
 	    cp -R template/presentation/presentation presentation/stage"${i}"
+	    find presentation/stage"${i}" -iname "*.qmd" -exec bash -c 'mv "$0" "$(dirname "$0")/${COURSE}=presentation=stage"${i}"--$(basename "$0")"' "{}" \;
 	done
     fi
     echo "# Individual presentation" > presentation/README.md
@@ -142,5 +152,5 @@ function edit_package_json () {
     # Replace description
     sed -i "s|\"description\": \".*\"|\"description\": \"$(cat template/config/course/`cat COURSE` | grep DESCR | cut -d: -f2 | xargs)\"|" package.json
     # Replace name
-    sed -i "s|\"name\": \".*\"|\"name\": \"$(basename `pwd`)\"|" package.json
+    sed -i "s|\"name\": \".*\"|\"name\": \"$(cat COURSE)\"|" package.json
 }
