@@ -1,3 +1,19 @@
+# [1.3.0](https://github.com/yamadharma/course-directory-student-template/compare/v1.2.1...v1.3.0) (2025-09-02)
+
+
+### Bug Fixes
+
+* **prepare:** remove changelog ([7ce8423](https://github.com/yamadharma/course-directory-student-template/commit/7ce8423ce2b6341b216ff430ac6e8475337c081c))
+* **script:** fix edit package.json ([e34a0a6](https://github.com/yamadharma/course-directory-student-template/commit/e34a0a6762596078cbb2369801c5ab533baa4247))
+
+
+### Features
+
+* **course:** add nettech ([a1ddcf3](https://github.com/yamadharma/course-directory-student-template/commit/a1ddcf39e2a7206608a0d0e0e9f70a7b3434715e))
+* **prepare:** add category to file names ([f9f74f6](https://github.com/yamadharma/course-directory-student-template/commit/f9f74f63ed36095ae95b4d81acfcfb16c4898d04))
+
+
+
 ## [1.2.1](https://github.com/yamadharma/course-directory-student-template/compare/v1.2.0...v1.2.1) (2025-07-02)
 
 

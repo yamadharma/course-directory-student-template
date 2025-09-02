@@ -1,6 +1,6 @@
 {
   "name": "course-directory-student-template",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "Course Catalog Template for Students",
   "main": "index.js",
   "repository": "git@github.com:yamadharma/course-directory-student-template.git",
