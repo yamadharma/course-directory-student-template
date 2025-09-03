@@ -1,3 +1,17 @@
+## [1.3.1](https://github.com/yamadharma/course-directory-student-template/compare/v1.3.0...v1.3.1) (2025-09-03)
+
+
+### Bug Fixes
+
+* **script:** replace = -> -- ([9160a71](https://github.com/yamadharma/course-directory-student-template/commit/9160a7187a00040f977ae5b802c391313994d306))
+
+
+### Features
+
+* **course:** add course for scientific writing ([8223172](https://github.com/yamadharma/course-directory-student-template/commit/8223172dd941ee5becdbd8f90471076b62e3bd56))
+
+
+
 # [1.3.0](https://github.com/yamadharma/course-directory-student-template/compare/v1.2.1...v1.3.0) (2025-09-02)
 
 
