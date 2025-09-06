@@ -464,10 +464,10 @@ git clone --recursive https://github.com/yamadharma/course-directory-student-tem
 
 # Видео
 
-[![RuTube](https://pic.rutubelist.ru/video/2025-09-03/f3/71/f371923b6802db01d0bc4735586e7b95.jpg){width=560px}](https://rutube.ru/video/90a6233297bc6de30acb3af992eaedc8/)
+[![RuTube](https://pic.rutubelist.ru/video/2025-09-03/f3/71/f371923b6802db01d0bc4735586e7b95.jpg)](https://rutube.ru/video/90a6233297bc6de30acb3af992eaedc8/)
 
-[![Платформа](https://s-dt-rt1.cloud.edgecore.ru/fp-2025-09-cover/Jjf4mXm-h65_/c3dea0e4-afea-4d19-927e-bfd3812d9237.jpg){width=560px}](https://plvideo.ru/watch?v=Jjf4mXm-h65_)
+[![Платформа](https://s-dt-rt1.cloud.edgecore.ru/fp-2025-09-cover/Jjf4mXm-h65_/c3dea0e4-afea-4d19-927e-bfd3812d9237.jpg)](https://plvideo.ru/watch?v=Jjf4mXm-h65_)
 
-[![VKvideo](https://sun1-86.userapi.com/X4ozpnObDzOszkmLpm2NpauUx075QbpjA6fVGg/pOVZsIv3Ees.jpg){width=560px}](https://vkvideo.ru/video-230024722_456239047)
+[![VKvideo](https://sun1-86.userapi.com/X4ozpnObDzOszkmLpm2NpauUx075QbpjA6fVGg/pOVZsIv3Ees.jpg)](https://vkvideo.ru/video-230024722_456239047)
 
-[![Youtube](http://img.youtube.com/vi/39bu5avPoDU/0.jpg){width=560px}](http://www.youtube.com/watch?v=39bu5avPoDU)
+[![Youtube](http://img.youtube.com/vi/39bu5avPoDU/0.jpg)](http://www.youtube.com/watch?v=39bu5avPoDU)
