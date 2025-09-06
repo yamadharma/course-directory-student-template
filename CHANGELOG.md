@@ -1,3 +1,12 @@
+## [1.4.2](https://github.com/yamadharma/course-directory-student-template/compare/v1.4.1...v1.4.2) (2025-09-06)
+
+
+### Bug Fixes
+
+* **make:** add bash to makefile ([fc02772](https://github.com/yamadharma/course-directory-student-template/commit/fc02772c5a1c52508d4ac0174f261185f9424a66))
+
+
+
 ## [1.4.1](https://github.com/yamadharma/course-directory-student-template/compare/v1.4.0...v1.4.1) (2025-09-06)
 
 
