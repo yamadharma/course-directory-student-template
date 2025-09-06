@@ -1,3 +1,4 @@
+SHELL := /bin/bash
 COURSE = 
 
 .PHONY: all clean
