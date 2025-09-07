@@ -466,7 +466,7 @@ git clone --recursive https://github.com/yamadharma/course-directory-student-tem
 
 [![RuTube](https://pic.rutubelist.ru/video/2025-09-03/f3/71/f371923b6802db01d0bc4735586e7b95.jpg)](https://rutube.ru/video/90a6233297bc6de30acb3af992eaedc8/)
 
-[![Платформа](https://s-dt-rt1.cloud.edgecore.ru/fp-2025-09-cover/Jjf4mXm-h65_/c3dea0e4-afea-4d19-927e-bfd3812d9237.jpg)](https://plvideo.ru/watch?v=Jjf4mXm-h65_)
+[![Платформа](https://s-dt-rt1.cloud.edgecore.ru/fp-2025-09-cover/Jjf4mXm-h65_/607985b3-64d7-416f-b338-7e15cdcf5c3f.jpg)](https://plvideo.ru/watch?v=Jjf4mXm-h65_)
 
 [![VKvideo](https://sun1-86.userapi.com/X4ozpnObDzOszkmLpm2NpauUx075QbpjA6fVGg/pOVZsIv3Ees.jpg)](https://vkvideo.ru/video-230024722_456239047)
 
