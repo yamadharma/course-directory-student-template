@@ -3,4 +3,4 @@
 ## Clone repository
 
 git clone --recursive https://github.com/yamadharma/course-directory-student-template.git
-as fdsafafdsafa
+
