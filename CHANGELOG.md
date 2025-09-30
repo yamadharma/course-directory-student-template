@@ -1,3 +1,12 @@
+## [1.4.3](https://github.com/yamadharma/course-directory-student-template/compare/v1.4.2...v1.4.3) (2025-09-30)
+
+
+### Bug Fixes
+
+* **readme:** change link to image (plvideo) ([76fab20](https://github.com/yamadharma/course-directory-student-template/commit/76fab20c4e814f48432800339fbbd56c3c5f787c))
+
+
+
 ## [1.4.2](https://github.com/yamadharma/course-directory-student-template/compare/v1.4.1...v1.4.2) (2025-09-06)
 
 
