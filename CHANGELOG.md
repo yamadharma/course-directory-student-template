@@ -1,3 +1,12 @@
+## [1.4.4](https://github.com/yamadharma/course-directory-student-template/compare/v1.4.3...v1.4.4) (2025-10-16)
+
+
+### Bug Fixes
+
+* **main:** update submodule ([896c19c](https://github.com/yamadharma/course-directory-student-template/commit/896c19c0fd78e6cb6ef1b6817fe9845f3c559096))
+
+
+
 ## [1.4.3](https://github.com/yamadharma/course-directory-student-template/compare/v1.4.2...v1.4.3) (2025-09-30)
 
 
