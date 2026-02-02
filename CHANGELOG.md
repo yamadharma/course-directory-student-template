@@ -1,3 +1,13 @@
+## [1.4.5](https://github.com/yamadharma/course-directory-student-template/compare/v1.4.4...v1.4.5) (2026-02-02)
+
+
+### Bug Fixes
+
+* **main:** add git script for submodules ([6610aea](https://github.com/yamadharma/course-directory-student-template/commit/6610aeac41f4102c9ecd4936911fd6adc9113bab))
+* **main:** fix script ([788b40a](https://github.com/yamadharma/course-directory-student-template/commit/788b40a7da39375746afbb0e65399b86a5d6278c))
+
+
+
 ## [1.4.4](https://github.com/yamadharma/course-directory-student-template/compare/v1.4.3...v1.4.4) (2025-10-16)
 
 
