@@ -1,6 +1,6 @@
 {
   "name": "course-directory-student-template",
-  "version": "1.4.4",
+  "version": "1.4.5",
   "description": "Course Catalog Template for Students",
   "main": "index.js",
   "repository": "git@github.com:yamadharma/course-directory-student-template.git",
@@ -8,7 +8,7 @@
   "license": "CC-BY-4.0",
     "config": {
 	"commitizen": {
-	    "path": "cz-conventional-changelog"
+	    "path": "cz-customizable"
 	}
     }
 }
