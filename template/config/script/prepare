@@ -1,14 +1,16 @@
 #!/bin/bash
 
+## Fix submodules
+source ./template/config/script/fix-submodules.sh
+
 source ./template/config/script/functions
 
 COURSE=$(check_course)
 
-if [[ -z "${COURSE}" ]]
-then
-    echo "Please use the correct course abbreviation"
-    list_courses | sort -k 2
-    exit 1
+if [[ -z "${COURSE}" ]]; then
+	echo "Please use the correct course abbreviation"
+	list_courses | sort -k 2
+	exit 1
 fi
 
 set -a
