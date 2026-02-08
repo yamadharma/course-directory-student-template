@@ -1,3 +1,13 @@
+## [1.4.6](https://github.com/yamadharma/course-directory-student-template/compare/v1.4.5...v1.4.6) (2026-02-08)
+
+
+### Bug Fixes
+
+* **main:** switch to 2-digit name format ([7fff1a2](https://github.com/yamadharma/course-directory-student-template/commit/7fff1a22d81087d1571957562b89341db38ccf19))
+* **main:** update Makefile and scripts ([d143d33](https://github.com/yamadharma/course-directory-student-template/commit/d143d3390b1f4b97b81eb11c8ff7dcb1ed73acde))
+
+
+
 ## [1.4.5](https://github.com/yamadharma/course-directory-student-template/compare/v1.4.4...v1.4.5) (2026-02-02)
 
 
