@@ -1,3 +1,17 @@
+## [1.4.7](https://github.com/yamadharma/course-directory-student-template/compare/v1.4.6...v1.4.7) (2026-02-17)
+
+
+### Bug Fixes
+
+* **main:** move -- -\> - in file names ([02781d6](https://github.com/yamadharma/course-directory-student-template/commit/02781d650a39bd2e7e28bff7d4ced102cb844e91))
+
+
+### Features
+
+* **main:** add course security-modeling ([572f3ff](https://github.com/yamadharma/course-directory-student-template/commit/572f3ffe4c2000546c75e00a37b3b75245bf3f30))
+
+
+
 ## [1.4.6](https://github.com/yamadharma/course-directory-student-template/compare/v1.4.5...v1.4.6) (2026-02-08)
 
 
