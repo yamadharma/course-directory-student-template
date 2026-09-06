@@ -1,3 +1,9 @@
+# [1.5.0](https://github.com/yamadharma/course-directory-student-template/compare/v1.4.7...v1.5.0) (2026-09-06)
+
+### Features
+
+* **main:** add new repository ([9237e98](https://github.com/yamadharma/course-directory-student-template/commit/9237e98c6eaa6aa527b13b48d4aa1ad7c1b478b2))
+
 ## [1.4.7](https://github.com/yamadharma/course-directory-student-template/compare/v1.4.6...v1.4.7) (2026-02-17)
 
 
