@@ -134,8 +134,10 @@ function edit_package_json() {
 	sed -i "s/\"version\": \".*\"/\"version\": \"1.0.0\"/" package.json
 	# Replace name and email
 	sed -i "s/\"author\": \".*\"/\"author\": \"$(git config --get user.name) <$(git config --get user.email)>\"/" package.json
-	# Replace repository
-	sed -i "s|\"repository\": \".*\"|\"repository\": \"$(git remote get-url origin)\"|" package.json
+	# Replace repository (web URL: ssh://git@host:port/owner/repo.git -> https://host/owner/repo,
+	# иначе standard-changelog строит ссылки вида https://host/port/owner/repo)
+	repo_url=$(git remote get-url origin | sed -E 's|^ssh://git@([^:/]+)(:[0-9]+)?/|https://\1/|; s|^git@([^:]+):|https://\1/|; s|\.git$||')
+	sed -i "s|\"repository\": \".*\"|\"repository\": \"${repo_url}\"|" package.json
 	# Replace description
 	sed -i "s|\"description\": \".*\"|\"description\": \"$(cat template/config/course/$(cat COURSE) | grep DESCR | cut -d: -f2 | xargs)\"|" package.json
 	# Replace name
